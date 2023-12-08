@@ -116,8 +116,8 @@ For example, if given the url: *archive.org/about/* and:
 
 The matchType may also be set implicitly by using wildcard '*' at end or beginning of the url:
 
- * If url is ends in '/\*', eg **url=archive.org/\*** the query is equivalent to **url=archive.org/&matchType=prefix**
- * if url starts with '\*.', eg **url=\*.archive.org/** the query is equivalent to **url=archive.org/&matchType=domain**
+ * If url is ends in '/\*', e.g. **url=archive.org/\*** the query is equivalent to **url=archive.org/&matchType=prefix**
+ * if url starts with '\*.', e.g. **url=\*.archive.org/** the query is equivalent to **url=archive.org/&matchType=domain**
 
 (Note: The *domain* mode is only available if the CDX is in SURT-order format.)
 
@@ -359,7 +359,7 @@ Currently two restrictions/permission types are supported:
 * Access to certain fields, such as filename in the CDX. When restricted, the cdx results contain only public fields.
 
 
-To allow access, the API key cookie must be explicitly set on the client, eg:
+To allow access, the API key cookie must be explicitly set on the client, e.g.:
 
 ```
 curl -H "Cookie: cdx-auth-token=API-Key-Secret http://mycdxserver/search/cdx?url=..."
